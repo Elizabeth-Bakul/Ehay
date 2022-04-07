@@ -1,0 +1,139 @@
+.navbar
+  background-color: transparent
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  z-index: 1
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+    padding-top: 26px
+  &-left
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+  &-menu
+    display: flex
+    justify-content: space-between
+    list-style: none
+    padding: 13px 0
+    &__item
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      margin-right: 20px
+      &:last-child
+        margin-right: 42px
+      &:first-child
+        margin-right: 32px
+    &__button
+      color: $light
+      background-color: transparent
+      border: none
+      padding: 0
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      cursor: pointer
+      transition: 0.3S ease
+      &:focus
+        outline: 1px solid $light
+      +hover 
+        color: $button-text
+  &__link
+    text-decoration: none
+    color: $light
+    transition: 0.3S ease
+    &:focus
+      outline: 1px solid $light
+    +hover 
+      color: $button-text
+  &__button
+    height: 48px
+    max-width: 131px
+    padding-top: 12px
+    padding-bottom: 13px
+    padding-left: 23px
+    padding-right: 22px
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    background-color: inherit
+    border: 2px solid $light
+    border-radius: 8px
+    color: $light
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    cursor: pointer
+    transition: 0.3S ease
+    &:focus
+      outline: 1px solid $light
+    +hover 
+      border: 2px solid $button-text
+      color: $button-text
+  &__menu-button
+      display: none
+.submenu
+  &-content
+    max-height: 0px
+    overflow: hidden
+    padding-left: 5px
+    top: 65px
+    list-style: none
+    min-width: 100px
+    max-width: 150px
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    background-color: transparent
+    position: absolute
+    z-index: 1
+    transition: max-height 0.4s linear
+    &--visible
+      max-height: 120px
+      min-height: 120px
+      padding-top: 5px
+      overflow-y: auto
+      li
+        display: block
+  &__item
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    display: none
+    max-height: 24px
+    &:not(:last-child)
+      margin-bottom: 8px
+  &__link
+    text-decoration: none
+    color: $light
+    transition: 0.3S ease
+    &:focus
+      outline: 1px solid $light
+    +hover 
+      color: $button-text
+.navigation
+  margin-right: 40px
+.logo
+  height: 28px
+  width: 90px
+  margin-top: 12px
+  &:focus
+    outline: 1px solid $dark
+  &__image
+    display: block
+    height: 100%
+    width: 100%
+    transition: 0.3S ease
+    +hover
+      transform: scale(1.2)
+.fa-angle-down
+  width: 9px
+  height: 16px

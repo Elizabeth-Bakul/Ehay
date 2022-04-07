@@ -1,0 +1,126 @@
+.footer
+  padding-top: 129px
+  padding-bottom: 82px
+  background-color: #0D2436
+  &--second
+    padding-top: 119px
+  &-container
+    max-width: 1200px
+    margin: 0 auto
+    padding-right: 15px
+    padding-left: 15px
+    &--second
+      padding-left: 70px
+  &-top
+    display: flex
+    justify-content: flex-start
+    align-items: flex-start
+    margin-bottom: 96px
+  &-bottom
+    max-width: 315px
+    margin: 0 auto
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding-right: 30px
+    &--second
+      padding-right: 0px
+      padding-left: 28px
+    &__heart
+      display: block
+      height: 56px
+      width: 56px
+      padding: 17px 18px
+      box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.2)
+      border-radius: 2000px
+      background-color: $button-text
+      margin-bottom: 24px
+      color: $light
+      font-size: 24px
+      line-height: 28px
+    &__text
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 22px
+      color: $text
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+  &__title
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    color: $text
+    margin-bottom: 31px
+  &-list
+    display: flex
+    flex-direction: column
+    &__item
+      list-style: none
+      &:not(:last-child)
+        margin-bottom: 24px
+      &--mb2
+        margin-bottom: 11px!important
+    &__link
+      text-decoration: none
+      color: $footer-text
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 22px
+      transition: 0.3S ease
+      &:focus
+        outline: 1px solid $light
+      +hover 
+        color: $button-text
+.about
+  width: 243px
+  margin-right: 50px
+  &__logo
+    margin-top: 0 !important
+    margin-bottom: 28px
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 15px
+    line-height: 28px
+    margin-bottom: 31px
+    color: $text
+.product
+  margin-right: 30px
+  width: 165px
+.service
+  margin-right: 30px
+  width: 165px
+.company
+  margin-right: 24px
+  width: 171px
+.network
+  display: flex
+  margin-left: -2px
+  &__link
+    color: $text
+    height: 21px
+    transition: 0.3S ease
+    &:first-child
+      margin-right: 20px !important
+      width: 18px 
+    &:nth-child(2)
+      width: 18px
+    &:nth-child(3)
+      width: 16px
+    &:nth-child(4)
+      width: 16px
+    &:last-child
+      width: 21px
+    &:not(:last-child)
+      margin-right: 24px
+    &:focus
+      outline: 1px solid $light
+    +hover 
+      color: $button-text
+      transform: scale(1.2)

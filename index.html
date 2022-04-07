@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" media="all" />
+    <link rel="stylesheet" href="css/aos.css" media="all"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ehya-новостной сайт</title>
+  </head>
+  <body>
+    <header class="navbar navbar--mobile--fixed" id="header">
+      <div class="container container--first">
+        <div class="navbar-wrapper">
+          <a href="https://web-elizabeth.ru/Ehya/" class="logo" data-aos="fade-right"
+            data-aos-delay="200">
+            <img src="img/Logo.svg" alt="Logo: Ehya" class="logo__image" />
+          </a>
+          <button class="menu-button navbar__menu-button">
+            <span class="menu-button__line"></span
+            ><span class="menu-button__line"></span
+            ><span class="menu-button__line"></span>
+          </button>
+          <div class="navbar-main " data-aos="fade-right"
+            data-aos-delay="300">
+            <div class="navbar-left">
+              <nav class="navigation">
+                <ul class="navbar-menu">
+                  <li class="navbar-menu__item">
+                    <a href="#" class="navbar__link">Домой</a>
+                  </li>
+                  <li class="navbar-menu__item submenu">
+                    <button class="navbar-menu__button lending">
+                      Лендинги
+                      <i class="fas fa-angle-down fa-sm"></i>
+                    </button>
+                    <ul class="submenu-content" id="lending">
+                      <li class="submenu__item">
+                        <a href="#popular" class="submenu__link">Популярные ст.</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#recent" class="submenu__link">Последние ст.</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#examples" class="submenu__link">Примеры</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="#all" class="submenu__link">Все ст.</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navbar-menu__item submenu">
+                    <button class="navbar-menu__button pages">
+                      Страницы
+                      <i
+                        class="fas fa-angle-down fa-sm"
+                        style="margin-left: -3px"
+                      ></i>
+                    </button>
+                    <ul class="submenu-content" id="pages">
+                      <li class="submenu__item">
+                        <a href="" class="submenu__link">Page1</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="" class="submenu__link">Page4</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="" class="submenu__link">Page2</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="" class="submenu__link">Page3</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="navbar-menu__item">
+                    <a href="#" class="navbar__link">Помощь</a>
+                  </li>
+                </ul>
+              </nav>
+              <button class="navbar__button" data-toggle="modal"
+                data-href="#send-modal">Получить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero hero--first">
+      <div class="container container--first">
+        <div class="hero-wrapper">
+          <h2 class="hero__title">Отдел новостей</h2>
+          <div class="hero__search">
+            <form action="#" class="search">
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Поиск постов"
+              />
+              <input type="submit" value="Поиск" class="search__button" />
+            </form>
+            <div class="hero__tags">
+              <span class="hero__text">Популярные Тэги :</span>
+              <div class="hero__tag">Design</div>
+              <div class="hero__tag">User Experience</div>
+              <div class="hero__tag">User Interfaces</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured">
+      <div class="container">
+        <div class="featured-card card" data-aos="fade-up"
+            data-aos-delay="100">
+          <img
+            src="img/featured-img.jpg"
+            alt="Photo: Featured card"
+            class="card__image"
+          />
+          <div class="card-info">
+            <div class="card__suggestion">Предложения</div>
+            <h2 class="card__title">
+              Дешевые Авиабилеты - Отличный Способ Сэкономить
+            </h2>
+            <p class="card__text">
+              В этом цифровом поколении, где информацию можно легко получить за
+              секунды, визитки ...
+            </p>
+            <div class="card-footer">
+              <div class="card__user user">
+                <img
+                  src="img/user_avatar.jpg"
+                  alt="Photo: Viola Manisa"
+                  class="user__img"
+                />
+                <div class="user__info">
+                  <div class="user__name">Viola Manisa</div>
+                  <div class="user__verify verify">
+                    <img
+                      src="img/verify-icon.svg"
+                      alt="Icon: Verify"
+                      class="verify__img"
+                    />
+                    <span class="verify__info">Verified writer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card__data">02 May</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="popular" id="popular">
+      <div class="container">
+        <h2 class="popular__title title">Популярные Статьи</h2>
+        <div class="popular-wrapper">
+          <p class="popular__text text">
+            Мы делимся общими тенденциями, стратегическими идеями, мнениями,
+            короткими и длинными историями команды, стоящей за компанией.
+          </p>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="popular__link link"
+            >Смотреть все
+            <i class="fas fa-arrow-right fa-sm"></i>
+          </a>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="popular-card popular-card--first main-card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic">
+            <div class="main-card__suggestion suggestion">Предложения</div>
+            <h3 class="main-card__title main-card__title--first">
+              Как защитить свою семью от угарного газа
+            </h3>
+            <div class="main-card-footer">
+              <div class="main-card__user user">
+                <img
+                  src="img/user_avatar.jpg"
+                  alt="Photo: Viola Manisa"
+                  class="user__img"
+                />
+                <div class="user__info">
+                  <div class="user__name user__name--light">Viola Manisa</div>
+                  <div class="user__verify verify">
+                    <img
+                      src="img/verify-icon.svg"
+                      alt="Icon: Verify"
+                      class="verify__img"
+                    />
+                    <span class="verify__info">Verified writer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__data">02 May</div>
+            </div>
+          </a>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="popular-card popular-card--second main-card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="100">
+            <div class="main-card__suggestion suggestion">Предложения</div>
+            <h3 class="main-card__title main-card__title--second">
+              Материнство - самая трудная и лучшая работа на свете
+            </h3>
+            <div class="main-card-footer">
+              <div class="main-card__user user">
+                <img
+                  src="img/user_avatar2.jpg"
+                  alt="Photo: Joshua William"
+                  class="user__img"
+                />
+                <div class="user__info">
+                  <div class="user__name user__name--light">Joshua William</div>
+                  <div class="user__verify verify">
+                    <img
+                      src="img/verify-icon.svg"
+                      alt="Icon: Verify"
+                      class="verify__img"
+                    />
+                    <span class="verify__info">Verified writer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__data">02 May</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="recent" id="recent">
+      <div class="container">
+        <h2 class="recent__title title">Последние Статьи</h2>
+
+        <div class="recent-wrapper">
+          <p class="recent__text text">
+            Вот чем мы занимались в последнее время.
+          </p>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="recent__link link"
+            >Смотреть все
+            <i class="fas fa-arrow-right fa-sm"></i>
+          </a>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="recent-card recent-card--first article-card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="100">
+            <h3 class="article-card__title">Будущее Работы</h3>
+            <p class="article-card__text article-card__text--first">
+              Большинство людей будут работать на рабочих местах, которых
+              сегодня не существует.
+            </p>
+            <div class="article-footer">
+              <div class="article-card__user user">
+                <img
+                  src="img/user_avatar3.jpg"
+                  alt="Photo: Lina Hicks"
+                  class="user__img article-card__img"
+                />
+                <div class="user__info">
+                  <div class="user__name user__name--light article-card__name">
+                    Lina Hicks
+                  </div>
+                  <div class="user__verify verify article-card__verify">
+                    <img
+                      src="img/verify-icon.svg"
+                      alt="Icon: Verify"
+                      class="verify__img"
+                    />
+                    <span class="verify__info article-card__info"
+                      >Verified writer</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="article-card__data">02 May</div>
+            </div>
+          </a>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="recent-card recent-card--second article-card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="200">
+            <h3 class="article-card__title">Будущее Данных</h3>
+            <p class="article-card__text">
+              Благодаря нескончаемым объемам данных и количеству инсайтов
+            </p>
+            <div class="article-footer">
+              <div class="article-card__user user">
+                <img
+                  src="img/user_avatar4.jpg"
+                  alt="Photo: Tyler Murray"
+                  class="user__img article-card__img"
+                />
+                <div class="user__info">
+                  <div class="user__name user__name--light article-card__name">
+                    Tyler Murray
+                  </div>
+                  <div class="user__verify verify article-card__verify">
+                    <img
+                      src="img/verify-icon.svg"
+                      alt="Icon: Verify"
+                      class="verify__img"
+                    />
+                    <span class="verify__info article-card__info"
+                      >Verified writer</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="article-card__data">02 May</div>
+            </div>
+          </a>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="recent-card recent-card--third article-card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="300">
+            <h3 class="article-card__title">Будущее Обучения</h3>
+            <p class="article-card__text article-card__text--third">Постоянная способность учиться будет на самых важных <br/>навыках.</p>
+            <div class="article-footer">
+              <div class="article-card__user user">
+                <img
+                  src="img/user_avatar5.jpg"
+                  alt="Photo: Warren Casey"
+                  class="user__img article-card__img"
+                />
+                <div class="user__info">
+                  <div class="user__name user__name--light article-card__name">
+                    Warren Casey
+                  </div>
+                  <div class="user__verify verify article-card__verify">
+                    <img
+                      src="img/verify-icon.svg"
+                      alt="Icon: Verify"
+                      class="verify__img"
+                    />
+                    <span class="verify__info article-card__info"
+                      >Verified writer</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="article-card__data">02 May</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="examples" id="examples">
+      <div class="container examples-container">
+        <h2 class="examples__title title">Примеры из практики</h2>
+        <div class="examples-wrapper">
+          <p class="examples__text text">
+            Вот чем мы занимались в последнее время.
+          </p>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="examples__link link"
+            >Смотреть все
+            <i class="fas fa-arrow-right fa-sm"></i>
+          </a>
+          <div class="examples__wrapper" data-aos="fade-up"
+            data-aos-delay="100">
+            <div class="swiper-container examples-slider">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="card examples-slider__item">
+                    <img
+                      src="img/examples_photo.jpg"
+                      alt="Photo: Swiper card"
+                      class="card__image examples-slider__img"
+                    />
+                    <div class="card-info examples-info">
+                      <div class="card__suggestion examples-slider__suggestion">
+                        Предложения
+                      </div>
+                      <h2 class="card__title examples-slider__title">
+                        Дешевые Авиабилеты - Отличный Способ Сэкономить
+                      </h2>
+                      <p class="card__text examples-slider__text">
+                        В этом цифровом поколении, где информацию можно легко
+                        получить за секунды, визитки ...
+                      </p>
+                      <div class="card-footer examples-footer">
+                        <div class="card__user user">
+                          <img
+                            src="img/user_avatar.jpg"
+                            alt="Photo: Viola Manisa"
+                            class="user__img"
+                          />
+                          <div class="user__info">
+                            <div class="user__name">Viola Manisa</div>
+                            <div class="user__verify verify">
+                              <img
+                                src="img/verify-icon.svg"
+                                alt="Icon: Verify"
+                                class="verify__img"
+                              />
+                              <span class="verify__info">Verified writer</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card__data">02 May</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card examples-slider__item">
+                    <img
+                      src="img/featured-img.jpg"
+                      alt="Photo: Examples card"
+                      class="card__image examples-slider__img"
+                    />
+                    <div class="card-info examples-info">
+                      <div class="card__suggestion examples-slider__suggestion">
+                        Предложения
+                      </div>
+                      <h2 class="card__title examples-slider__title">
+                        Дешевые Авиабилеты - Отличный Способ Сэкономить
+                      </h2>
+                      <p class="card__text examples-slider__text">
+                        В этом цифровом поколении, где информацию можно легко
+                        получить за секунды, визитки ...
+                      </p>
+                      <div class="card-footer examples-footer">
+                        <div class="card__user user">
+                          <img
+                            src="img/user_avatar.jpg"
+                            alt="Photo: Viola Manisa"
+                            class="user__img"
+                          />
+                          <div class="user__info">
+                            <div class="user__name">Viola Manisa</div>
+                            <div class="user__verify verify">
+                              <img
+                                src="img/verify-icon.svg"
+                                alt="Icon: Verify"
+                                class="verify__img"
+                              />
+                              <span class="verify__info">Verified writer</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card__data">02 May</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card examples-slider__item">
+                    <img
+                      src="img/featured-img.jpg"
+                      alt="Photo: examples card"
+                      class="card__image examples-slider__img"
+                    />
+                    <div class="card-info examples-info">
+                      <div class="card__suggestion examples-slider__suggestion">
+                        Предложения
+                      </div>
+                      <h2 class="card__title examples-slider__title">
+                        Дешевые Авиабилеты - Отличный Способ Сэкономить
+                      </h2>
+                      <p class="card__text examples-slider__text">
+                        В этом цифровом поколении, где информацию можно легко
+                        получить за секунды, визитки ...
+                      </p>
+                      <div class="card-footer examples-footer">
+                        <div class="card__user user">
+                          <img
+                            src="img/user_avatar.jpg"
+                            alt="Photo: Viola Manisa"
+                            class="user__img"
+                          />
+                          <div class="user__info">
+                            <div class="user__name">Viola Manisa</div>
+                            <div class="user__verify verify">
+                              <img
+                                src="img/verify-icon.svg"
+                                alt="Icon: Verify"
+                                class="verify__img"
+                              />
+                              <span class="verify__info">Verified writer</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card__data">02 May</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="examples__button examples__button--prev">
+              <i class="fas fa-arrow-left fa-sm arrow"></i>
+            </button>
+            <button class="examples__button examples__button--next">
+              <i class="fas fa-arrow-right fa-sm arrow"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="all" id="all">
+      <div class="container">
+        <h2 class="all__title title">Все Статьи</h2>
+        <div class="all-wrapper">
+          <p class="all__text text">
+            Мы делимся общими тенденциями, стратегическими идеями, мнениями,
+            короткими и длинными историями команды, стоящей за компанией.
+          </p>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="all-card all-card--first main-card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="100">
+            <div class="all-card__suggestion suggestion">Предложения</div>
+            <h3
+              class="all-card__title main-card__title main-card__title--first"
+            >
+              Как защитить свою семью от угарного газа
+            </h3>
+            <div class="main-card-footer">
+              <div class="main-card__user user">
+                <img
+                  src="img/user_avatar.jpg"
+                  alt="Photo: Viola Manisa"
+                  class="user__img"
+                />
+                <div class="user__info">
+                  <div class="user__name user__name--light">Viola Manisa</div>
+                  <div class="user__verify verify">
+                    <img
+                      src="img/verify-icon.svg"
+                      alt="Icon: Verify"
+                      class="verify__img"
+                    />
+                    <span class="verify__info">Verified writer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__data">02 May</div>
+            </div>
+          </a>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="all-card all-card--second main-card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="200">
+            <div class="all-card__suggestion suggestion">Предложения</div>
+            <h3
+              class="main-card__title main-card__title--second main-card__title--third"
+            >
+              Материнство - самая трудная и лучшая работа на свете
+            </h3>
+            <div class="main-card-footer">
+              <div class="main-card__user user">
+                <img
+                  src="img/user_avatar2.jpg"
+                  alt="Photo: Joshua William"
+                  class="user__img"
+                />
+                <div class="user__info">
+                  <div class="user__name user__name--light">Joshua William</div>
+                  <div class="user__verify verify">
+                    <img
+                      src="img/verify-icon.svg"
+                      alt="Icon: Verify"
+                      class="verify__img"
+                    />
+                    <span class="verify__info">Verified writer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="main-card__data">02 May</div>
+            </div>
+          </a>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="all-card all-card--third article-card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="100">
+            <h3 class="article-card__title">Будущее Работы</h3>
+            <p class="article-card__text article-card__text--first">
+              Большинство людей будут работать на рабочих местах, которых
+              сегодня не существует.
+            </p>
+            <div class="article-footer">
+              <div class="article-card__user user">
+                <img
+                  src="img/user_avatar3.jpg"
+                  alt="Photo: Lina Hicks"
+                  class="user__img article-card__img"
+                />
+                <div class="user__info">
+                  <div class="user__name user__name--light article-card__name">
+                    Lina Hicks
+                  </div>
+                  <div class="user__verify verify article-card__verify">
+                    <img
+                      src="img/verify-icon.svg"
+                      alt="Icon: Verify"
+                      class="verify__img"
+                    />
+                    <span class="verify__info article-card__info"
+                      >Verified writer</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="article-card__data">02 May</div>
+            </div>
+          </a>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="all-card all-card--fourth article-card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="200">
+            <h3 class="article-card__title">Будущее Данных</h3>
+            <p class="article-card__text">
+              Благодаря нескончаемым объемам данных и количеству инсайтов
+            </p>
+            <div class="article-footer">
+              <div class="article-card__user user">
+                <img
+                  src="img/user_avatar4.jpg"
+                  alt="Photo: Tyler Murray"
+                  class="user__img article-card__img"
+                />
+                <div class="user__info">
+                  <div class="user__name user__name--light article-card__name">
+                    Tyler Murray
+                  </div>
+                  <div class="user__verify verify article-card__verify">
+                    <img
+                      src="img/verify-icon.svg"
+                      alt="Icon: Verify"
+                      class="verify__img"
+                    />
+                    <span class="verify__info article-card__info"
+                      >Verified writer</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="article-card__data">02 May</div>
+            </div>
+          </a>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="all-card all-card--fifth article-card" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-delay="300">
+            <h3 class="article-card__title">Будущее Обучения</h3>
+            <p class="article-card__text article-card__text--third">
+              Постоянная способность учиться будет на самых важных <br/>навыках.
+            </p>
+            <div class="article-footer">
+              <div class="article-card__user user">
+                <img
+                  src="img/user_avatar5.jpg"
+                  alt="Photo: Warren Casey"
+                  class="user__img article-card__img"
+                />
+                <div class="user__info">
+                  <div class="user__name user__name--light article-card__name">
+                    Warren Casey
+                  </div>
+                  <div class="user__verify verify article-card__verify">
+                    <img
+                      src="img/verify-icon.svg"
+                      alt="Icon: Verify"
+                      class="verify__img"
+                    />
+                    <span class="verify__info article-card__info"
+                      >Verified writer</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="article-card__data">02 May</div>
+            </div>
+          </a>
+          <a href="https://web-elizabeth.ru/Ehya/page.html" class="all__link link"
+            >Больше постов 
+            <i class="fas fa-arrow-right fa-sm"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="subscribe-container">
+        <div class="subscribe-wrapper">
+          <div class="subscribe-info" data-aos="fade-right"
+            data-aos-delay="100">
+            <h3 class="subscribe-info__title">
+              Получите наши истории на ваш почтовый ящик еженедельно.
+            </h3>
+            <form action="send.php" method="POST" class="subscribe-info__form">
+              <div class="subscribe-info__wrapper">
+                <input
+                  type="email"
+                  class="subscribe__input"
+                  placeholder="Ваш Email"
+                  name="email"
+                  required
+                />
+              </div>
+              <input
+                type="submit"
+                class="subscribe__button"
+                value="Начать"
+                name="Send1"
+              />
+            </form>
+            <p class="subscribe__text">
+              Получите ответ завтра, если отправите его до 9 вечера сегодня.
+              Если мы получили после 9 вечера, мы получим ответ на следующий
+              день.
+            </p>
+          </div>
+          <div class="subscribe-card" data-aos="fade-right"
+            data-aos-delay="100">
+            <div class="subscribe-card__container">
+              <div class="subscribe-card__wrapper">
+                <img
+                  src="img/subscribe.jpg"
+                  alt="Photo: subscribe photo"
+                  class="subscribe-card__image"
+                />
+                <h4 class="subscribe-card__title">
+                  Лучшие статьи каждую неделю
+                </h4>
+                <p class="subscribe-card__text">
+                  Наши предложения по страхованию везде одинаковы.
+                </p>
+              </div>
+              <div
+                class="subscribe-card__rectangle subscribe-card__rectangle--blue"
+              ></div>
+              <div
+                class="subscribe-card__rectangle subscribe-card__rectangle--dark"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <div class="container container--second">
+          <div class="line"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer__item about">
+            <a href="https://web-elizabeth.ru/Ehya/" class="about__logo logo">
+              <img src="img/Logo.svg" alt="Icon: Logo" class="logo__image" />
+            </a>
+            <p class="about__text">
+              Создайте современный и креативный веб-сайт с crealand
+            </p>
+            <div class="about__network network">
+              <a href="https://www.google.ru/" class="network__link" target="_blank"><i class="fab fa-google"></i></a
+              ><a href="https://twitter.com/" class="network__link" target="_blank"><i class="fab fa-twitter"></i></a
+              ><a href="https://www.instagram.com/" class="network__link" target="_blank"><i class="fab fa-instagram"></i></a
+              ><a href="https://www.linkedin.com/" class="network__link" target="_blank"><i class="fab fa-linkedin"></i></a
+              ><a href="https://www.youtube.com/" class="network__link" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer__item product">
+            <h3 class="footer__title">Продукт</h3>
+            <ul class="footer-list">
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Лендинг</a
+            ></li>
+              
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Функции</a
+            ></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Документация</a
+            ></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Скидки</a
+            ></li>
+            <li class="footer-list__item"><a href="#" class="footer-list__link">Расценки</a></li>
+            </ul>
+            
+          </div>
+          <div class="footer__item service">
+            <h3 class="footer__title">Сервисы</h3>
+            <ul class="footer-list">
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Документация</a
+            ></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Дизайн</a
+            ></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Темы</a
+            ></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Иллюстрации</a
+            ></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">UI Kit</a></li>
+            </ul>
+          </div>
+          <div class="footer__item company">
+            <h3 class="footer__title">Компания</h3>
+            <ul class="footer-list">
+              <li class="footer-list__item"><a href="#" class="footer-list__link">О нас</a
+            ></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Условия</a
+            ></li>
+              <li class="footer-list__item footer-list__item--mb2"><a href="#" class="footer-list__link">Политика 
+конфиденциальности
+</a
+            ></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Careers</a></li>
+            </ul>
+            
+          </div>
+          <div class="footer__item more">
+            <h3 class="footer__title">Более</h3>
+            <ul class="footer-list">
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Документация</a
+            ></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Лицензия</a
+            ></li>
+              <li class="footer-list__item"><a href="#" class="footer-list__link">Измененния</a></li>
+            </ul>
+            
+          </div>
+        </div>
+        <div class="footer-bottom">
+        <div class="footer-bottom__heart">
+          <i class="fas fa-heart"></i>
+        </div>
+        <p class="footer-bottom__text">Copyright © 2019. Crafted with love.</p>
+      </div>
+        
+      </div>
+
+      
+    </footer>
+    <div class="modal" id="send-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" height="16" width="16"/>
+        </a>
+        <h3 class="modal__title">получить</h3>
+        <form action="send.php" method="POST" class="modal__form">
+          <input
+            type="text"
+            class="modal__input"
+            placeholder="Ваше имя*"
+            name="name_modal"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="modal__input"
+            placeholder="Номер телефона*"
+            id="modal__input-phone"
+            minlength="16"
+            name="phone_modal"
+            required
+          />
+          <input
+            type="email"
+            class="modal__input"
+            placeholder="Электронная почта*"
+            name="email_modal"
+            required
+          />
+          <textarea
+            cols="30"
+            rows="10"
+            class="message modal__message"
+            placeholder="Сообщение"
+            name="message_modal"
+          ></textarea>
+          <input
+            class="button modal__button"
+            type="submit"
+            name="Send-modal"
+            value="Получить"
+          />
+          <span class="modal__info">* Обязательные поля</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <a href="#header" class="to-top">
+      <img src="./img/return-image.png" alt="">
+    </a>
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/6a1faee04d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="node_modules/focus-visible/dist/focus-visible.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <!--<script src="js/aos.js"></script>-->
+    <script src="js/main.js"></script>
+  </body>
+</html>

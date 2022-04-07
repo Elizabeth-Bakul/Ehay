@@ -1,0 +1,186 @@
+.subscribe
+  padding-top: 176px
+  height: 709px
+  position: relative
+  margin-top: 30px
+  &::before
+    content: ''
+    background-image: url(../img/Wave_dark.svg)
+    background-repeat: no-repeat
+    background-size: cover
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    height: 177px
+    width: 100%
+    z-index: -1
+  &-container
+    padding-top: 10px
+    background-color: #0D2436
+    height: 100%
+    z-index: 1
+  &-wrapper
+    display: flex
+    height: 99.6%
+    //max-width: 1221px
+    //margin-right: 4.8%
+    //margin-left: 10.4%
+    max-width: 1322px
+    margin-left: auto
+    margin-right: auto
+    padding-left: 91px
+    padding-right: 10px
+    //width: 92%
+    justify-content: space-between
+  &-info
+    padding-top: 56px
+    width: 53%
+    &__title
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 36px
+      line-height: 48px
+      color: $light
+      letter-spacing: 0.2px
+      margin-bottom: 47px
+    &__form
+      display: flex
+      margin-bottom: 21px
+    &__wrapper
+      display: flex
+      flex-direction: column
+      width: 320px
+      margin-right: 8px
+  &__input
+    width: 100%
+    height: 56px
+    border-radius: 8px
+    overflow: hidden
+    background-color: $light
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 22px
+    padding: 16px 16px
+    color: $text
+    border: none
+    margin-bottom: 5px
+  &__button
+    height: 56px
+    min-width: 166px
+    max-width: 166px
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis
+    cursor: pointer
+    border-radius: 8px
+    background-color: $button-text
+    color: $light
+    border: none
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 25px
+    padding: 16px 48px
+    transition: 0.3S ease
+    &:focus
+      outline: 1px solid $light
+    +hover 
+      background-color: $dark
+      border: 1px solid $button-text
+      padding: 16px 44px
+  &__text
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 28px
+    color: $text
+    max-width: 555px
+  &-card
+    width: 39%
+    max-width: 466px
+    margin-right: 51px
+    margin-left: 67px
+    &__container
+      position: relative
+      width: 100%
+      height: 100%
+    &__rectangle
+      width: 237px
+      height: 200px
+      box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
+      border-radius: 16px
+      position: absolute
+      z-index: 1
+      &--blue
+        background-color: $button-text
+        right: -51px
+        top: 42px
+      &--dark
+        background: #FFFFFF
+        mix-blend-mode: normal
+        opacity: 0.06
+        left: -61px
+        top: 227px
+    &__wrapper
+      position: absolute
+      background-color: $light
+      padding: 8px 7px 30px 9px
+      width: 100%
+      box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.15)
+      border-radius: 16px
+      z-index: 5
+    &__image
+      max-width: 450px
+      width: 100%
+      height: 212px
+      margin-bottom: 25px
+      border-radius: 12px
+    &__title
+      font-family: Roboto
+      font-style: normal
+      font-weight: bold
+      font-size: 24px
+      line-height: 32px
+      letter-spacing: 0.2px
+      color: #183B56
+      margin-left: 22px
+      margin-bottom: 12px
+    &__text
+      max-width: 330px
+      max-height: 91px
+      overflow-y: auto
+      margin-left: 22px
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 32px
+      color: $title-color
+  &-thank
+    padding-top: 176px
+    height: 709px
+    position: relative
+    margin-top: -90px
+    &::before
+      content: ''
+      background-image: url(../img/Wave_dark.svg)
+      background-repeat: no-repeat
+      background-size: cover
+      background-position: center
+      position: absolute
+      top: 0
+      right: 0
+      left: 0
+      height: 177px
+      width: 100%
+      z-index: 1
+    &-container
+      z-index: 2
+      padding-top: 10px
+      background-color: #0D2436
+      height: 100%
+.line
+  border: 1px solid #1A3245
+  height: 1px
